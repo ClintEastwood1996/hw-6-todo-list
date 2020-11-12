@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>TODI-LIST</title>
+<link href="main.css" rel="stylesheet"></head>
+<body>
+    <header class="header">
+        <div class="title">
+            TODO List
+        </div>
+    </header>
+    <section class="main-section">
+        <div class="todo-list-wrapper">
+            <div class="add-line">
+                <input type="text" id="newTodoText" class="add-line__text">
+                <input type="date" id="daedline" name="deadline" value="2020-11-11" min="2020-11-11" max="2022-12-31" class="add-line__deadline">
+                <input type="button" value="+" id="plusButton" class="add-line__button">
+            </div>
+            <div class="todo-list" id="todoList">
+
+            </div>
+            <div class="filter">
+                <div class="filter__text filter__item">Filter by:</div>
+                <input class="filter__item" id="DoneFilter" type="button" value="done">
+                <input class="filter__item" id="notDoneFilter" type="button" value="not done">
+                <input class="filter__item" type="button" value="show all" id="showAll">
+                <input class="filter__item filter__deadline" type="date" id="filterDaedline" name="filterDaedline" value="2020-11-11" min="2020-11-11" max="2022-12-31">
+            </div>
+        </div>
+    </section>
+<script src="main.js"></script></body>
+</html>

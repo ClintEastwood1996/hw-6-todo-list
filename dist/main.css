@@ -1,0 +1,183 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* font-face */
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(cfe3602cde0ad1c9ae0eb127186013c9.ttf);
+}
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(c477ec326ec5faea47053a6d28ad4889.ttf);
+}
+body {
+  font-size: 22px;
+  font-family: Roboto-Regular;
+  letter-spacing: 1px;
+  min-width: 320px;
+}
+
+.title {
+  margin: 0 auto;
+  font-size: 42px;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.main-section {
+  padding-top: 100px;
+}
+.main-section .todo-list-wrapper {
+  margin: 0 auto;
+}
+.main-section .todo-list-wrapper .add-line {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 100px;
+}
+.main-section .todo-list-wrapper .add-line__text {
+  -webkit-flex-basis: 600px;
+      -ms-flex-preferred-size: 600px;
+          flex-basis: 600px;
+  margin-right: 20px;
+  height: 30px;
+  padding-left: 5px;
+  font-size: 18px;
+  border: none;
+  border-bottom: solid 2px #000;
+  margin-bottom: 20px;
+}
+.main-section .todo-list-wrapper .add-line__deadline {
+  -webkit-flex-basis: 130px;
+      -ms-flex-preferred-size: 130px;
+          flex-basis: 130px;
+  margin-right: 20px;
+  height: 30px;
+  padding-left: 5px;
+  font-size: 18px;
+  border: none;
+  border-bottom: solid 2px #000;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  padding: 0;
+  margin-left: 5px;
+  font-size: 14px;
+}
+.main-section .todo-list-wrapper .add-line__button {
+  -webkit-flex-basis: 50px;
+      -ms-flex-preferred-size: 50px;
+          flex-basis: 50px;
+  cursor: pointer;
+  height: 35px;
+}
+.main-section .todo-list-wrapper .todo-list {
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 30px;
+}
+.main-section .todo-list-wrapper .todo-list-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 10px;
+}
+.main-section .todo-list-wrapper .todo-list-item__text {
+  -webkit-flex-basis: 600px;
+      -ms-flex-preferred-size: 600px;
+          flex-basis: 600px;
+  margin-right: 20px;
+  height: 30px;
+  padding-left: 5px;
+  font-size: 18px;
+  border: solid 2px #000;
+  margin-left: 10px;
+}
+.main-section .todo-list-wrapper .todo-list-item__button {
+  -webkit-flex-basis: 50px;
+      -ms-flex-preferred-size: 50px;
+          flex-basis: 50px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.main-section .todo-list-wrapper .filter {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding-left: 20px;
+  padding-right: 40px;
+}
+.main-section .todo-list-wrapper .filter__item {
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
