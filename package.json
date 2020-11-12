@@ -1,0 +1,51 @@
+{
+  "name": "hw-6-todolist",
+  "version": "1.0.0",
+  "description": "Home work N6 - EPAM JS Training",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack --mode development",
+    "build": "cross-env NODE_ENV=production webpack --mode production",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --mode development --open --host 0.0.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClintEastwood1996/hw-6-todo-list.git"
+  },
+  "keywords": [
+    "TODO-LIST",
+    "HW6"
+  ],
+  "author": "Magomed Gasanov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ClintEastwood1996/hw-6-todo-list.git/issues"
+  },
+  "homepage": "https://github.com/ClintEastwood1996/hw-6-todo-list.git#readme",
+  "browserslist": [
+    "last 2 versions",
+    "ios >= 8"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^10.0.1",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.2.0",
+    "cross-env": "^7.0.2",
+    "css-loader": "^4.3.0",
+    "cssnano": "^4.1.10",
+    "fibers": "^5.0.0",
+    "file-loader": "^6.1.0",
+    "html-webpack-plugin": "^4.5.0",
+    "mini-css-extract-plugin": "^0.11.3",
+    "node-sass": "^4.14.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "postcss": "^8.1.1",
+    "postcss-loader": "^4.0.4",
+    "postcss-preset-env": "^6.7.0",
+    "sass": "^1.28.0",
+    "sass-loader": "^10.0.3",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

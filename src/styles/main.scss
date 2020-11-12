@@ -1,0 +1,144 @@
+/* font-face */
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../assets/fonts/Roboto-Regular.ttf)
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(../assets/fonts/Roboto-Bold.ttf);
+}
+
+// mixins
+
+@mixin __text($width, $font-size) {
+    flex-basis: $width;
+    margin: {
+        right: 20px;
+    };
+    height: 30px;
+    padding-left: 5px;
+    font-size: $font-size;
+}
+
+// // Common
+body {
+    font: {
+        size: 22px;;
+        family: Roboto-Regular;
+    }
+    letter-spacing: 1px;
+    min-width: 320px;
+}
+
+
+
+
+// header 
+
+.title {
+    margin: 0 auto;
+    font-size: 42px;
+    text-align: center;
+    padding: {
+        top: 80px;
+    };
+}
+
+
+// main-section
+
+.main-section {
+    padding: {
+        top: 100px;
+    };
+
+    .todo-list-wrapper {
+        margin: 0 auto;
+
+        .add-line {
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: center;
+           padding: {
+               left: 50px;
+               right: 50px;
+           };
+           margin: {
+               bottom: 100px;
+           };
+                &__text {
+                    @include __text(600px, 18px);
+                    border: none;
+                    border-bottom: solid 2px #000;
+                    margin-bottom: 20px;
+                }
+
+                &__deadline {
+                    @include __text(130px, 18px);
+                    border: none;
+                    border-bottom: solid 2px #000;
+                    flex-shrink: 0;
+                    padding: 0;
+                    margin-left: 5px;
+                    font-size: 14px;
+                }
+
+                &__button {
+                    flex-basis: 50px;
+                    cursor: pointer;
+                    height: 35px;
+                }
+        }
+
+        .todo-list {
+            padding: {
+                left: 5%;
+                right: 5%;
+            };
+            margin-bottom: 30px;
+
+            &-item {
+                display: flex;
+                justify-content: center;
+                margin: {
+                    bottom: 10px;
+                };
+
+                
+                &__text {
+                    @include __text(600px, 18px);
+                    border: solid 2px #000;
+                    margin: {
+                        left: 10px;
+                    };
+                }  
+                
+
+                &__button {
+                    flex-basis: 50px;
+                    cursor: pointer;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        .filter {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: {
+                left: 20px;
+                right: 40px;
+            };
+
+            &__item {
+                margin: {
+                   right: 10px;
+                   left: 10px;
+                   bottom: 20px;
+                }
+            }
+        }
+    }
+}
